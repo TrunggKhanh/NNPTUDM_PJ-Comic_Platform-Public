@@ -1,0 +1,23 @@
+/* components/scrolltop.css */
+#scrollToTopBtn {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border: 2px solid;
+    color: var(--title-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}
+
+#scrollToTopBtn:hover {
+    border-color: var(--containers-color-yellow);
+    color: var(--containers-color-yellow);
+    transform: translateY(-5px);
+}

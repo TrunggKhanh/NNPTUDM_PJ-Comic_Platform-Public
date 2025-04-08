@@ -1,0 +1,649 @@
+
+.activeStep {
+  background-color: #6A1B9A;
+  color: white;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  color: #6A1B9A;
+}
+
+.uploadContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.uploadBox {
+  text-align: center;
+  border: 2px dashed #d9d9d9;
+  border-radius: 12px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.uploadBox:hover {
+  border-color: #FF4081;
+}
+
+.imageActions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.inputStyle,
+.selectStyle {
+  border: 2px solid #6A1B9A;
+  border-radius: 8px;
+  padding: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.inputStyle:hover,
+.selectStyle:hover {
+  border-color: #FF4081;
+}
+
+
+
+.buttonPrimary {
+  background-color: #6A1B9A;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background-color: #FF4081;
+}
+
+.buttonDefault {
+  background-color: #d9d9d9;
+  color: #6A1B9A;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonDefault:hover {
+  background-color: #FF4081;
+  color: white;
+}
+
+.imagePreviewModal img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.exitWarningModal {
+  text-align: center;
+  padding: 20px;
+}
+
+.exitWarningModal p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6A1B9A;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .modalContainer {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .breadcrumbContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.modalContainer {
+  max-width: 800px; /* Đảm bảo popup rộng hơn để phù hợp với nội dung */
+  max-height: 90vh; /* Chiều cao tối đa là 90% màn hình */
+  overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputStyle, .selectStyle {
+  width: 100%;
+}
+
+.switchContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.uploadContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.uploadBox {
+  text-align: center;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Điều chỉnh chiều rộng dropdown */
+.selectGrid .ant-select-dropdown {
+  width: 600px !important; /* Tăng chiều rộng để đủ không gian */
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Hiển thị dropdown dưới dạng grid */
+.selectGrid .ant-select-item {
+  display: inline-block;
+  width: calc(100% / 6 - 10px); /* 6 cột, trừ khoảng cách giữa */
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.selectGrid .ant-select-item:hover {
+  background-color: #f5f5f5;
+}
+
+.breadcrumbContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Giảm khoảng cách giữa các bước */
+}
+
+.stepWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stepIndicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #d3d3d3; /* Màu xám nhạt khi chưa highlight */
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.activeStep {
+  background-color: #6A1B9A; /* Màu highlight */
+  border-color: #6A1B9A;
+}
+
+.stepLine {
+  width: 40px;
+  height: 2px;
+  background-color: #d3d3d3; /* Màu xám nhạt khi chưa highlight */
+}
+
+.stepWrapper .activeStep ~ .stepLine {
+  background-color: #6A1B9A; /* Đổi màu line nếu đã đi qua */
+}
+
+.modalContainer {
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6A1B9A;
+  margin-bottom: 20px;
+}
+
+.uploadContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.uploadBox {
+  text-align: center;
+  border: 2px dashed #d3d3d3;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.uploadBox:hover {
+  border-color: #FF4081;
+}
+
+.imageActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.inputStyle,
+.selectStyle {
+  border: 2px solid #6A1B9A;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.inputStyle:hover,
+.selectStyle:hover {
+  border-color: #FF4081;
+}
+
+.buttonPrimary {
+  background-color: #6A1B9A;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.buttonPrimary:hover {
+  background-color: #FF4081;
+}
+
+.buttonDefault {
+  background-color: #d3d3d3;
+  color: #6A1B9A;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.buttonDefault:hover {
+  background-color: #FF4081;
+  color: white;
+}
+.authorRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.addAuthorButton {
+  background-color: #6A1B9A;
+  color: white;
+  border: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exitWarningModal {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.exitWarningModal p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6A1B9A;
+  margin-bottom: 20px;
+}
+
+.exitWarningModal .buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa hai nút */
+}
+
+.exitWarningModal .buttonPrimary {
+  background-color: #6A1B9A;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.exitWarningModal .buttonPrimary:hover {
+  background-color: #FF4081;
+}
+
+.exitWarningModal .buttonDefault {
+  background-color: #6A1B9A; /* Màu tím đậm cho nút Hủy */
+  color: white; /* Chữ màu trắng */
+  font-weight: bold;
+  border: none; /* Không có viền */
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.exitWarningModal .buttonDefault:hover {
+  background-color: #FF4081; /* Màu nền khi hover */
+  color: white;
+}
+/* Container cho danh sách file */
+.fileListContainer {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Mỗi mục file */
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Tên file */
+.fileName {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Kích thước file */
+.fileSize {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Hành động trên hình ảnh (phóng to, xóa, v.v.) */
+.imageActions {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+}
+
+.imageActions .anticon {
+  font-size: 18px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.imageActions .anticon:hover {
+  color: #ff9900;
+}
+
+.modalContainer {
+  max-width: 600px;
+}
+
+.stepContainer {
+  margin: 10px 0;
+}
+
+.uploadSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previewButton {
+  margin-left: 10px;
+}
+
+.nextButton {
+  margin-top: 20px;
+}
+
+
+
+/* lmao popup */
+.previewPopup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.previewContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 650px;
+}
+
+.imageWrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCenter {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  height: 630px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pageNumber {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.imageSide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  height: 630px;
+  z-index: 1;
+  filter: blur(8px);
+  opacity: 0.6;
+}
+
+.imageSide:first-of-type {
+  left: -170px;
+}
+
+.imageSide:last-of-type {
+  right: -170px;
+}
+
+.imageBlur {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.controlButton {
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.controlButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.controlButton:hover:not(:disabled) {
+  background-color: #d9d9d9;
+}
+.previewContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imageCenter {
+  display: flex;
+  position: relative;
+}
+
+.imageSide {
+  position: relative;
+  filter: brightness(0.3);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.controlButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.controlButton:hover {
+  background-color: rgba(211, 22, 22, 0.7);
+  color: rgb(199, 0, 0);
+  transform: scale(1.1);
+}
+
+.controlButton:disabled {
+  background-color: rgba(146, 22, 22, 0.5);
+  color: rgba(191, 0, 0, 0.5);
+  cursor: not-allowed;
+}
+
+.demoReadContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.readingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.centeredArea {
+  text-align: center;
+}
+
+.adjustableArea {
+  background-color: #1a1a1d;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.pageContainer {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.pageHeader {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.chapterImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.zoomControls {
+  margin-top: 20px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardHeader {
+  background-color: #4a148c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.cardBody {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}

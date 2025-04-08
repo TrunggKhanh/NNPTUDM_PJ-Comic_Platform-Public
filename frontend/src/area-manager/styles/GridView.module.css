@@ -1,0 +1,99 @@
+.tableContainer {
+    margin-top: 20px;
+  }
+  
+  .comicTableImage {
+    width: 200px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  
+  .comicName {
+    max-width: 200px;
+    word-break: break-word;
+  }
+  
+  .clickableTag {
+    cursor: pointer;
+  }
+  
+  .comicStatusColumn {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .comicTag {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
+  .actionButton {
+    position: relative;
+    color: #6a1b9a; /* Màu tím */
+  }
+  
+  .actionButton:hover {
+    color: #ff4d4f; /* Màu đỏ khi hover */
+  }
+  
+  .actionButton::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 100%;
+    margin-left: 5px;
+    padding: 2px 6px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+  }
+  
+  .actionButton:hover::after {
+    opacity: 1;
+  }
+
+/* Hover Info Container */
+.hoverInfo {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  background: white;
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 10;
+  width: 300px; /* Đảm bảo độ rộng đủ để chứa 3 mục */
+}
+
+/* Mỗi mục trong hover */
+.hoverItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px; /* Độ rộng cố định */
+}
+
+/* Icon trong hover */
+.hoverIcon {
+  font-size: 16px;
+  color: #6a1b9a; /* Màu tím cho icon */
+}

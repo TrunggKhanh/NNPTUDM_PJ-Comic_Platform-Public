@@ -1,0 +1,204 @@
+/* Container tổng thể */
+.genreIndexContainer {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề */
+  .genreIndexTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+  }
+  
+  /* Nút thêm thể loại */
+  .addGenreBtn {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .addGenreBtn:hover {
+    background-color: #53127c;
+    color: #fff;
+  }
+  
+  /* Bảng Ant Design */
+  .antTable {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Số lượng truyện trong bảng */
+  .storyCount {
+    font-weight: bold;
+    color: #1890ff;
+  }
+  
+  /* Trạng thái hoạt động */
+  .antTagGreen {
+    background-color: #52c41a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .antTagRed {
+    background-color: #ff4d4f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Nút thao tác */
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .actionButtons button {
+    font-size: 16px;
+  }
+  
+  /* Popover */
+  .popoverContent {
+    width: 550px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popoverTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .popoverItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .popoverRank {
+    background-color: #4b0082;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .popoverBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    flex: 1;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #fff;
+  }
+  
+  .popoverComicName {
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+  }
+  
+  .popoverComicStats {
+    font-size: 12px;
+    text-align: right;
+    color: #fff;
+  }
+  
+  /* Nút đóng Popover */
+  .closePopoverBtn {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  
+  .closePopoverBtn:hover {
+    background-color: #53127c;
+  }
+  
+  /* Phân trang */
+  .ant-pagination {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .popoverBanner {
+    position: relative; /* Đặt ảnh làm phần tử tương đối */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    flex: 1;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #fff;
+    overflow: hidden; /* Giới hạn nội dung trong border */
+  }
+  
+  /* Lớp phủ màu đen */
+  .popoverBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh */
+  }
+  
+  /* Nội dung bên trên lớp phủ */
+  .popoverBanner div {
+    position: relative;
+    z-index: 2; /* Đặt nội dung bên trên lớp phủ */
+  }
+  
+  
+  .popoverComicName {
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .popoverComicStats {
+    font-size: 12px;
+    text-align: right;
+    color: white;
+  }
+  

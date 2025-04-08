@@ -1,0 +1,38 @@
+.entryDeniedModal {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .entryDeniedContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .entryDeniedImage {
+    width: 210px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .entryDeniedContent {
+    text-align: left;
+  }
+  
+  .entryDeniedContent h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4f;
+  }
+  
+  .entryDeniedContent p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .entryDeniedContent button {
+    margin-top: 10px;
+  }
+  

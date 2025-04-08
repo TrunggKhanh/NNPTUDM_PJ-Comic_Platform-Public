@@ -1,0 +1,171 @@
+.authorIndexContainer {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.authorIndexTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.addAuthorBtn {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.antTable {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.antTagGreen {
+  background-color: #52c41a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.antTagRed {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.activeStoryCount {
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.hiddenStoryCount {
+  font-weight: bold;
+  color: #ff4d4f;
+}
+
+.popoverContent {
+  width: 350px;
+  padding: 10px;
+}
+
+.popoverTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b0082;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.popoverItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popoverRank {
+  background-color: #4b0082;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.popoverBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  flex: 1;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.popoverComicName {
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.popoverComicStats {
+  font-size: 12px;
+  text-align: right;
+  color: #fff;
+}
+
+.closePopoverBtn {
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ant-collapse-content {
+  background-color: #f9f9f9; /* Nền Collapse */
+}
+
+.ant-collapse-header {
+  color: #6a1b9a; /* Màu nút tiêu đề */
+  font-weight: bold;
+}
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ant-collapse-content {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.ant-collapse-header {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  background-color: #6a1b9a;
+  color: #fff;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các thành phần */
+}
+
+.searchInput {
+  flex: 1; /* Để input chiếm không gian còn lại */
+  max-width: 300px; /* Giới hạn chiều rộng tối đa */
+}
+
+.staffDropdown {
+  width: 200px; /* Chiều rộng cố định của dropdown */
+}

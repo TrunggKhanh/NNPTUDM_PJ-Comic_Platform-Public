@@ -1,0 +1,12 @@
+.public-root {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.public-root.fade-in {
+    opacity: 1;
+}
+
+.public-root.fade-out {
+    opacity: 0;
+}

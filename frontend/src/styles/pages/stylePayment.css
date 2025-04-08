@@ -1,0 +1,198 @@
+﻿
+.main {
+    background-color: #000;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 27rem;
+    background: linear-gradient( to top,var(--containers-color-yellow), var(--body-white));
+    opacity: .5;
+}
+
+.payment__header {
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .payment__header h2 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .payment__header div {
+        width: 35%;
+        height: 5px;
+        background-color: #fff;
+    }
+
+.payment__content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: 3rem; */
+    z-index: 1000;
+}
+
+    .payment__content .content {
+        position: relative;
+    }
+
+/*.payment__content .content a{
+    position:absolute;
+    
+    align-items:center;
+    padding:.5rem 2rem;
+    color:var(--title-color);
+    font-weight:600;
+    font-size:1.1rem;
+    border-radius:2px;
+}
+*/
+.cr-product-card-image {
+    position: absolute;
+    top: -10rem;
+}
+
+
+/* .btn-pre {
+    left: 80px;
+    top: 350px;
+    background-color: #C133F7;
+}
+
+    .btn-pre:hover {
+        background-color: var(--containers-color-yellow);
+    } */
+
+.payment__content .content img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-pre {
+    max-width: 330px;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+}
+
+.payment__content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: .3rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px;
+    margin: 2rem;
+}
+
+.content-basic {
+    padding: 2rem;
+    background-color: #B36E63;
+    max-height: 400px;
+    max-width: 300px;
+    width: 300px;
+    margin-top: 5rem !important;
+}
+
+.content-mega {
+    background-color: #FCAD0D;
+    max-height: 470px;
+    padding: 2.5rem;
+    width: 350px;
+}
+
+.content-fan {
+    padding: 2.5rem;
+    background-color: #4857B4;
+    max-height: 410px;
+    width: 300px;
+    margin-top: 5rem !important;
+}
+
+
+.content h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.content h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.content h5 {
+    text-align: center;
+}
+
+.content ul {
+    list-style-type: disc;
+}
+
+.content li {
+    padding: .5rem 0;
+}
+
+.btn-pay {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.btn-basic {
+    color: #B36E63;
+}
+
+.btn-mega {
+    color: #FCAD0D;
+}
+
+.btn-fan {
+    color: #4857B4;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal-dialog {
+    position: fixed; /* Cố định modal trên màn hình */
+    top: 50%; /* Đưa modal xuống giữa màn hình theo chiều dọc */
+    left: 50%; /* Đưa modal sang giữa màn hình theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển modal để căn chính giữa */
+    width: 100%; /* Chiếm toàn bộ chiều rộng (tùy chỉnh nếu cần nhỏ hơn) */
+    max-width: 600px; /* Đặt giới hạn chiều rộng tối đa */
+    background-color: white; /* Nền trắng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo bóng */
+    border-radius: 8px; /* Bo góc cho modal */
+    z-index: 1050; /* Đảm bảo modal nằm trên các phần tử khác */
+    padding: 20px; /* Khoảng cách nội dung bên trong */
+  }
+  

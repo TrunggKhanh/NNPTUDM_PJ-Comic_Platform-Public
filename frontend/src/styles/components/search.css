@@ -1,0 +1,122 @@
+/* components/search.css */
+.search {
+    position: relative;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.search.active {
+    width: 360px;
+    margin-right: 1rem;
+}
+
+.search .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: var(--containers-color-alt);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search .input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .input input {
+    position: absolute;
+    top: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.results {
+    position: absolute;
+    width: 330px;
+    top: 50px;
+    left: 30px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.results li {
+    color: var(--first-color);
+}
+
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-color);
+}
+
+.item-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: var(--text-color);
+    padding: .4rem;
+}
+
+.item-search img {
+    width: 40px;
+    left: 0;
+}
+
+.item-search h4 {
+    color: var(--text-color);
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+
+.item-search span {
+    font-size: var(--normal-font-size);
+}
+
+.item-search:hover {
+    background-color: var(--title-color);
+    color: var(--body-color);
+}
+
+.item-search:hover h4 {
+    color: var(--body-color);
+}

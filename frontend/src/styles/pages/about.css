@@ -1,0 +1,14 @@
+.container {
+    padding-top: 30px;
+  }
+  
+  .rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .mb-3 {
+    margin-top: 5rem;
+  }
+  
